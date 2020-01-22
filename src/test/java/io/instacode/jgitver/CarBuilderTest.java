@@ -28,41 +28,22 @@ public class CarBuilderTest {
 
   @Test
   public void testNumberOfDoors() {
-    throw new UnsupportedOperationException("Test method not implemented yet.");
+    CarBuilder builder = new CarBuilder().numberOfDoors(3);
+    final Car car = builder.build();
+    Assert.assertEquals(car.getNumberOfDoors(), 3);
   }
 
   @Test
   public void testColor() {
-    throw new UnsupportedOperationException("Test method not implemented yet.");
+    CarBuilder builder = new CarBuilder().color("Red");
+    final Car car = builder.build();
+    Assert.assertEquals(car.getColor(), "Red");
   }
 
   @Test
   public void testBuild() {
-    throw new UnsupportedOperationException("Test method not implemented yet.");
-  }
-
-  @Test
-  public void testGetMake() {
-    throw new UnsupportedOperationException("Test method not implemented yet.");
-  }
-
-  @Test
-  public void testGetModel() {
-    throw new UnsupportedOperationException("Test method not implemented yet.");
-  }
-
-  @Test
-  public void testGetMaxSpeed() {
-    throw new UnsupportedOperationException("Test method not implemented yet.");
-  }
-
-  @Test
-  public void testGetNumberOfDoors() {
-    throw new UnsupportedOperationException("Test method not implemented yet.");
-  }
-
-  @Test
-  public void testGetColor() {
-    throw new UnsupportedOperationException("Test method not implemented yet.");
+    CarBuilder builder = new CarBuilder();
+    final Car veloster = builder.make("Hyundai").model("Veloster").maxSpeed(160).build();
+    Assert.assertNotNull(veloster);
   }
 }
