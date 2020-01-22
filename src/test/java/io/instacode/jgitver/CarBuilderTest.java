@@ -21,7 +21,9 @@ public class CarBuilderTest {
 
   @Test
   public void testMaxSpeed() {
-    throw new UnsupportedOperationException("Test method not implemented yet.");
+    CarBuilder builder = new CarBuilder().maxSpeed(160);
+    final Car car = builder.build();
+    Assert.assertEquals(car.getMaxSpeed(), 160);
   }
 
   @Test
