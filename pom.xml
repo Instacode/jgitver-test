@@ -17,4 +17,23 @@
     </dependencies>
 
 
+    <repositories>
+        <repository>
+            <id>jgitver-Snapshot</id>
+            <url>https://pkgs.dev.azure.com/jasone0822/JGitVer-Test/_packaging/jgitver-Snapshot/maven/v1</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>jasone0822</id>
+            <url>https://pkgs.dev.azure.com/jasone0822/_packaging/jasone0822/maven/v1</url>
+        </repository>
+    </distributionManagement>
 </project>
