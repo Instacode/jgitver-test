@@ -14,7 +14,9 @@ public class CarBuilderTest {
 
   @Test
   public void testModel() {
-    throw new UnsupportedOperationException("Test method not implemented yet.");
+    CarBuilder builder = new CarBuilder().model("Veloster");
+    final Car car = builder.build();
+    Assert.assertEquals(car.getModel(), "Veloster");
   }
 
   @Test
